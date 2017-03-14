@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_WxENYAfHEeeyW_kh0CGL-A" name="NewModel">
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_kZr_MAfHEeeyW_kh0CGL-A" name="Ecrire dans un champ de texte"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_lRa4cAfHEeeyW_kh0CGL-A" name="Utilisateur">
+    <eAnnotations xmi:id="_lRa4cQfHEeeyW_kh0CGL-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_lRa4cgfHEeeyW_kh0CGL-A" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_4TATAAfHEeeyW_kh0CGL-A" name="Action Copier">
+    <include xmi:id="_HM-_AAfIEeeyW_kh0CGL-A" addition="_C8vR0AfIEeeyW_kh0CGL-A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_6HYasAfHEeeyW_kh0CGL-A" name="Action Coller">
+    <include xmi:id="_R81M4AfIEeeyW_kh0CGL-A" addition="_4TATAAfHEeeyW_kh0CGL-A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_8e7g4AfHEeeyW_kh0CGL-A" name="Action Couper">
+    <extend xmi:id="_K3PDMAfIEeeyW_kh0CGL-A" extendedCase="_4TATAAfHEeeyW_kh0CGL-A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_C8vR0AfIEeeyW_kh0CGL-A" name="Sélectionner un texte"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mS6VMAfIEeeyW_kh0CGL-A" memberEnd="_mTNQIAfIEeeyW_kh0CGL-A _mTNQIQfIEeeyW_kh0CGL-A">
+    <ownedEnd xmi:id="_mTNQIAfIEeeyW_kh0CGL-A" type="_lRa4cAfHEeeyW_kh0CGL-A" association="_mS6VMAfIEeeyW_kh0CGL-A"/>
+    <ownedEnd xmi:id="_mTNQIQfIEeeyW_kh0CGL-A" type="_C8vR0AfIEeeyW_kh0CGL-A" association="_mS6VMAfIEeeyW_kh0CGL-A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m9YOgAfIEeeyW_kh0CGL-A" memberEnd="_m9YOgQfIEeeyW_kh0CGL-A _m9YOggfIEeeyW_kh0CGL-A">
+    <ownedEnd xmi:id="_m9YOgQfIEeeyW_kh0CGL-A" type="_lRa4cAfHEeeyW_kh0CGL-A" association="_m9YOgAfIEeeyW_kh0CGL-A"/>
+    <ownedEnd xmi:id="_m9YOggfIEeeyW_kh0CGL-A" type="_4TATAAfHEeeyW_kh0CGL-A" association="_m9YOgAfIEeeyW_kh0CGL-A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nsUYIAfIEeeyW_kh0CGL-A" memberEnd="_nsUYIQfIEeeyW_kh0CGL-A _nsUYIgfIEeeyW_kh0CGL-A">
+    <ownedEnd xmi:id="_nsUYIQfIEeeyW_kh0CGL-A" type="_6HYasAfHEeeyW_kh0CGL-A" association="_nsUYIAfIEeeyW_kh0CGL-A"/>
+    <ownedEnd xmi:id="_nsUYIgfIEeeyW_kh0CGL-A" type="_lRa4cAfHEeeyW_kh0CGL-A" association="_nsUYIAfIEeeyW_kh0CGL-A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oXrpUAfIEeeyW_kh0CGL-A" memberEnd="_oXrpUQfIEeeyW_kh0CGL-A _oXrpUgfIEeeyW_kh0CGL-A">
+    <ownedEnd xmi:id="_oXrpUQfIEeeyW_kh0CGL-A" type="_8e7g4AfHEeeyW_kh0CGL-A" association="_oXrpUAfIEeeyW_kh0CGL-A"/>
+    <ownedEnd xmi:id="_oXrpUgfIEeeyW_kh0CGL-A" type="_lRa4cAfHEeeyW_kh0CGL-A" association="_oXrpUAfIEeeyW_kh0CGL-A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pLGDQAfIEeeyW_kh0CGL-A" memberEnd="_pLGDQQfIEeeyW_kh0CGL-A _pLGDQgfIEeeyW_kh0CGL-A">
+    <ownedEnd xmi:id="_pLGDQQfIEeeyW_kh0CGL-A" type="_kZr_MAfHEeeyW_kh0CGL-A" association="_pLGDQAfIEeeyW_kh0CGL-A"/>
+    <ownedEnd xmi:id="_pLGDQgfIEeeyW_kh0CGL-A" type="_lRa4cAfHEeeyW_kh0CGL-A" association="_pLGDQAfIEeeyW_kh0CGL-A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_T1mP4AfJEeeyW_kh0CGL-A" name="Editeur de texte"/>
+</uml:Model>
