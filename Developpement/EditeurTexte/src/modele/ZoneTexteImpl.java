@@ -12,6 +12,11 @@ public class ZoneTexteImpl implements ZoneTexte
 		buffer_ = buffer;
 		texte_ = texte;
 	}
+
+	@Override
+	public String toString() {
+		return texte_;
+	}
 	
 	
 	

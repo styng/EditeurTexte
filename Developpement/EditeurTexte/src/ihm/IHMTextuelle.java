@@ -14,13 +14,13 @@ public class IHMTextuelle implements IHM
 	@Override
 	public void demarrer() 
 	{
-		
+		System.out.println(toString());;
 		
 	}
 
 	@Override
 	public String toString() 
 	{
-		return "";
+		return "Contenu : \""+zDT_.toString()+"\"";
 	}
 }
