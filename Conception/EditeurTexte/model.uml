@@ -37,4 +37,24 @@
     <ownedEnd xmi:id="_pLGDQgfIEeeyW_kh0CGL-A" type="_lRa4cAfHEeeyW_kh0CGL-A" association="_pLGDQAfIEeeyW_kh0CGL-A"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Component" xmi:id="_T1mP4AfJEeeyW_kh0CGL-A" name="Editeur de texte"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_k4wLoAiJEeeav5B76GKcFw" name="Package1">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_qqm1gAiJEeeav5B76GKcFw" name="IHM"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_66j18AiJEeeav5B76GKcFw" name="IHMGraphique">
+      <interfaceRealization xmi:id="_DoYhsAiKEeeav5B76GKcFw" client="_66j18AiJEeeav5B76GKcFw" supplier="_qqm1gAiJEeeav5B76GKcFw" contract="_qqm1gAiJEeeav5B76GKcFw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="__tTzQAiJEeeav5B76GKcFw" name="IHMTextuelle">
+      <interfaceRealization xmi:id="_FZTFsAiKEeeav5B76GKcFw" client="__tTzQAiJEeeav5B76GKcFw" supplier="_qqm1gAiJEeeav5B76GKcFw" contract="_qqm1gAiJEeeav5B76GKcFw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JNkMEAiLEeeav5B76GKcFw" name="Lanceur"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_LscpUAiLEeeav5B76GKcFw" name="utilise" memberEnd="_LscpUQiLEeeav5B76GKcFw _LscpVAiLEeeav5B76GKcFw" navigableOwnedEnd="_LscpUQiLEeeav5B76GKcFw _LscpVAiLEeeav5B76GKcFw">
+      <ownedEnd xmi:id="_LscpUQiLEeeav5B76GKcFw" name="lanceurs" type="_JNkMEAiLEeeav5B76GKcFw" association="_LscpUAiLEeeav5B76GKcFw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LscpUgiLEeeav5B76GKcFw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LscpUwiLEeeav5B76GKcFw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_LscpVAiLEeeav5B76GKcFw" name="iHMs" type="_qqm1gAiJEeeav5B76GKcFw" association="_LscpUAiLEeeav5B76GKcFw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LscpVQiLEeeav5B76GKcFw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LscpVgiLEeeav5B76GKcFw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
 </uml:Model>
