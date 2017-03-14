@@ -4,7 +4,6 @@ import java.nio.Buffer;
 
 public class ZoneDeTravailImpl implements ZoneDeTravail
 {
-
 	private Buffer buffer_;
 	private String texte_;
 	

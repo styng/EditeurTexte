@@ -8,5 +8,4 @@ public class Couper implements ActionZoneTexte
 		
 
 	}
-
 }
