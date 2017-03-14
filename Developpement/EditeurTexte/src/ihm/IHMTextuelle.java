@@ -1,12 +1,12 @@
 package ihm;
 
-import modele.ZoneDeTravail;
+import modele.ZoneTexte;
 
 public class IHMTextuelle implements IHM
 {
-	private ZoneDeTravail zDT_;
+	private ZoneTexte zDT_;
 	
-	public IHMTextuelle(ZoneDeTravail zDT) 
+	public IHMTextuelle(ZoneTexte zDT) 
 	{
 		zDT_ = zDT;
 	}
