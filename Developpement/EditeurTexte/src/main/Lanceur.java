@@ -6,14 +6,17 @@ import ihm.IHMTextuelle;
 import modele.ZoneTexte;
 import modele.ZoneTexteImpl;
 
+import java.util.Scanner;
+
 public class Lanceur 
 {
 	public static void main(String[] args) 
 	{
 		/*Faire une factory pour la zone de texte*/
-		ZoneTexte zT = new ZoneTexteImpl();
+		ZoneTexteImpl zT = new ZoneTexteImpl();
 		
-		IHM ihm = new IHMTextuelle();
+		//IHM ihm = new IHMTextuelle(zT);
+		IHM ihm = new IHMGraphique(zT);
 		ihm.demarrer();
 
 	}
